@@ -4,16 +4,25 @@ header = document.querySelector('h1');
 header.innerText= "new text!"; 
 
 // Make nav ul li elements get larger when you hover over them
-list = document.quereySelector('ul')
-list.addEventListener('mouseenter',function() {
-	list.style.fontSize = '30px';
+list = document.querySelector('ul');
+list.addEventListener('mouseenter', function() {
+list.style.fontSize = '25px';
 })
 
-list.addEventListener('mouseout',function() {
-	list.style.fontsize = '15px';
+list.addEventListener('mouseleave', function() {
+list.style.fontSize = '15px';
 });
+
 // Add another element to the main element
 // Dynamically change the color of the background on the footer when the user hovers over it
+bottom = document.querySelector('footer');
+bottom.addEventListener('mouseenter', function() {
+	bottom.style.backgroundColor = 'red';
+})
+
+bottom.addEventListener('mouseleave', function() {
+	bottom.style.backgroundColor = 'green'; 
+});
 // Change the font size of the paragraphs in the main element when the user clicks them
 // Change the text in the footer when the user clicks it
 // Remove the h1 element in the header
